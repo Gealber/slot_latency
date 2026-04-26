@@ -1,0 +1,15 @@
+# binary
+slot_latency
+
+# environment
+.env
+
+# keys
+id.json
+
+# logs
+*.log
+logs/
+
+# Go build cache
+/vendor/
