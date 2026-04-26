@@ -155,6 +155,11 @@ func (svc *TrackerService) trackSlot(slot uint64, timestampMs int64, fromGossip 
 		return 0, false
 	}
 
+	if entry.yellowTsMs < entry.gossipTsMs {
+		entry.latencyLogged = true
+		return 0, false
+	}
+
 	entry.latencyLogged = true
 	return time.Duration(entry.yellowTsMs-entry.gossipTsMs) * time.Millisecond, true
 }

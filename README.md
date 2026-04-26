@@ -62,6 +62,7 @@ latency = yellowstone_arrival − gossip_arrival
 ```
 
 The result is a `time.Duration` and is logged as the `latency` field on the `SLOT LATENCY TRACKED` log line.
+If Yellowstone is observed before gossip for a slot, that slot is dropped because it does not represent a valid gossip-to-Yellowstone latency.
 
 ## Wire Compatibility Note
 
