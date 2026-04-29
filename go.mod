@@ -5,7 +5,7 @@ go 1.25.5
 require (
 	github.com/Gealber/common v0.0.1
 	github.com/Gealber/gossip v0.0.1
-	github.com/Gealber/yellowstone-tritonone v0.0.9
+	github.com/Gealber/yellowstone-tritonone v0.0.10-0.20260429082927-446c38dcb382
 	github.com/joho/godotenv v1.5.1
 	github.com/rs/zerolog v1.35.1
 )

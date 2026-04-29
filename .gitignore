@@ -13,3 +13,6 @@ logs/
 
 # Go build cache
 /vendor/
+
+# vscode
+*code-workspace
